@@ -5,10 +5,7 @@
 
 // returned string has to be dynamically allocated and will be freed by the caller
 char *alphabet_position(const char *text) {
-
-    // int testIntiger = 25;
     char *pTempStr = (char*)malloc(90 * sizeof(char));
-    // strcpy(pTempStr, "Abcdefghi");
 
     int remainder;
     int quotient;
@@ -17,7 +14,6 @@ char *alphabet_position(const char *text) {
     int b = 0;  //output text counter
     while (*(text+a) != '\0'){
         asciVal = ((int)*(text+a));
-
 
         if (asciVal > 64 && asciVal < 91){      //capital letters
             remainder = (asciVal - 64) % 10;
@@ -37,11 +33,6 @@ char *alphabet_position(const char *text) {
             b++;
             *(pTempStr+b) = (char)32;   //write the space
             
-            
-            
-
-
-
         }else if(remainder != 0 || quotient != 0){
 
             *(pTempStr+b) = (char)48 + quotient;    //write the 10s
