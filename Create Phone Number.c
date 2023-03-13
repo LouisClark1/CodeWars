@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+// this is the function I wrote because I didn't know sprintf existed
 // char *create_phone_number(char phnum[15], const unsigned char nums[10])
 // {
 //     char tempStr[15] = "(LLL) LLL-LLLL";
