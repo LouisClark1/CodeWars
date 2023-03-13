@@ -23,7 +23,6 @@ void move_zeros(size_t len, int arr[len]){
         arrayCount++;
         printf("%i ", arr[loopCount]);
     }
-    printf("\narraycount is %i\n", arrayCount);
 
     // write the temp array onto the original
     for(unsigned int a = 0; a < (int)len; a++){
